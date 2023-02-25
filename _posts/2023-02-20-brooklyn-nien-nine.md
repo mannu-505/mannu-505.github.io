@@ -98,7 +98,7 @@ nano.save  user.txt
 
 >cat user.txt
 
-first ans is :ee11cbb19052e40b07aac0ca060c23ee
+and you will get your first flag.
 
 To escalate priviledge first check for sudo permission and found the holt have the permission to use /bin/nano as sudo without any password .
 
@@ -123,4 +123,4 @@ sudo /bin/nano /root/root.text
 > you can use "sudo /bin/nano -s /bin/sh" then write "/bin/sh" in nano and press "ctrl+t" or "^T" for full root shell to check flag as mentioned in GTFOBins.
 {: .prompt-tip}
 
-second ans is:63a9f0ea7bb98050796b649e85481845
+
