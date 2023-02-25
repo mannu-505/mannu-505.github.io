@@ -16,7 +16,7 @@ tags: [flags,hacking,tryhackme]
   Easy
   
 ### #Enumeration
-we will start with namp by unsig the following command.  
+we will start with nmap by unsig the following command.  
 
 ```bash
 nmap -A 10.10.32.149 -r
