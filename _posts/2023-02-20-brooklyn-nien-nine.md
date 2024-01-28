@@ -53,7 +53,7 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 {: .nolineno}
 
-the ftp server allows anonymous login so i tried to login in fpt server and check the list of files. there is a file named _note_to_jake.txt_ 
+the ftp server allows anonymous login so i tried to login in ftp server and check the list of files. there is a file named _note_to_jake.txt_ 
 
 I downloaded the file to my computer and checked its content. which shows its a note to jake to change his password.
 
