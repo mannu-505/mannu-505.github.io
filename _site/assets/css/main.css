@@ -947,7 +947,7 @@ table tfoot td {
 }
 
 .wrapper {
-  max-width: 1250px;
+  max-width: 1300px;
   position: relative;
 }
 
@@ -993,9 +993,9 @@ table tfoot td {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 250px;
+  width: 265px;
   height: 100%;
-  padding: 20px 5px;
+  padding: 20px 8px;
   background-color: #ffffff;
 }
 
@@ -1041,6 +1041,11 @@ table tfoot td {
   color: #333030;
   font-weight: 700;
 }
+.about .author-badge {
+  margin: 0 0 10px;
+  position: relative;
+  padding-bottom: 15px;
+  }
 
 .about .author-name::after {
   content: "";
@@ -1065,7 +1070,7 @@ table tfoot td {
 
 .content-box {
   padding: 20px;
-  padding-left: 260px;
+  padding-left: 280px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
