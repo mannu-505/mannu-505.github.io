@@ -1,0 +1,60 @@
+
+.prompt-tip {
+  border-color: #4caf50;
+  background-color: #e6f4ea;
+}
+
+/* Info (Blue) */
+.prompt-info {
+  border-color: #2196f3;
+  background-color: #e7f3fe;
+}
+
+/* Warning (Yellow) */
+.prompt-warning {
+  border-color: #ff9800;
+  background-color: #fff3cd;
+}
+
+/* Danger (Red) */
+.prompt-danger {
+  border-color: #f44336;
+  background-color: #f8d7da;
+}
+
+/* Optional: Icon before prompt */
+.prompt-tip::before,
+.prompt-info::before,
+.prompt-warning::before,
+.prompt-danger::before {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 1.2em;
+}
+.prompt-tip,
+.prompt-info,
+.prompt-warning,
+.prompt-danger {
+  border-left: 5px solid;
+  padding: 1rem;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+  }
+
+.prompt-tip::before {
+  content: "💡";
+}
+
+.prompt-info::before {
+  content: "ℹ️";
+}
+
+.prompt-warning::before {
+  content: "⚠️";
+}
+
+.prompt-danger::before {
+  content: "❗";
+}

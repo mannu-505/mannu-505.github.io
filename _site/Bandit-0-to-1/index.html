@@ -91,6 +91,7 @@
         <a href="/"><img src="/assets/img/david-freeman.jpg" alt="Monk Who Code"></a>
       </div>
       <div class="author-name">Monk Who Code</div>
+      <div style="width:150px; height:80px;"><script src="https://tryhackme.com/badge/1025686"></script></div>
       <p>Some one searching for meaning of life as well as the sides of Tech. Always hungry to keep learning.</p>
     </div>
   </header> <!-- End Header -->
@@ -99,7 +100,7 @@
       <h3 class="contact-title">Contact me</h3>
       <ul>
         
-          <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         <!-- 
         
           <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> -->
@@ -153,25 +154,25 @@
 
 <h2 id="solution">Solution:</h2>
 <p>Login to bandit0 using ssh by password bandit0 at port 2220.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh bandit0@bandit.labs.overthewire.org -p 2220
+<div class="language-ssh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ssh</span> bandit0@bandit.labs.overthewire.org -p <span class="m">2220</span>
 </code></pre></div></div>
 <p>It will take you to home directory of bandit0.</p>
 
 <p>check the content of file readme.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bandit0@bandit:~<span class="nv">$ </span><span class="nb">cat </span>readme 
+<div class="language-ssh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">bandit0</span>@bandit:~<span class="err">$</span> cat readme 
 Congratulations on your first steps into the bandit game!!
-Please make sure you have <span class="nb">read </span>the rules at https://overthewire.org/rules/
-If you are following a course, workshop, walkthrough or other educational activity,
-please inform the instructor about the rules as well and encourage them to
-contribute to the OverTheWire community so we can keep these games free!
+<span class="k">Please</span> make sure you have read the rules at https://overthewire.org/rules/
+<span class="k">If</span> you are following a course, workshop, walkthrough or other educational activity,
+<span class="k">please</span> inform the instructor about the rules as well and encourage them to
+<span class="k">contribute</span> to the OverTheWire community so we can keep these games free!
 
-The password you are looking <span class="k">for </span>is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+<span class="k">The</span> password you are looking for is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 </code></pre></div></div>
 
 <p>The password for level one is <code class="language-plaintext highlighter-rouge">ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If</code></p>
 
-<blockquote>
-  <p>Create you own file to store the passwords of previous levels along with little description how did you find them so that in case the passwords are changed you need not to start from zero.</p>
+<blockquote class="prompt-tip">
+  <p>create you own file to store the passwords of previous levels along with little description how did you find them so that in case the passwords are changed you need not to start from zero.</p>
 </blockquote>
 
 

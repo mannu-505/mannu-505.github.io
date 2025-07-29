@@ -807,6 +807,69 @@ blockquote {
   font-style: italic;
   color: #ada8a8;
 }
+.prompt-tip {
+  border-color: #4caf50;
+  background-color: #e6f4ea;
+}
+
+/* Info (Blue) */
+.prompt-info {
+  border-color: #2196f3;
+  background-color: #e7f3fe;
+}
+
+/* Warning (Yellow) */
+.prompt-warning {
+  border-color: #ff9800;
+  background-color: #fff3cd;
+}
+
+/* Danger (Red) */
+.prompt-danger {
+  border-color: #f44336;
+  background-color: #f8d7da;
+}
+
+/* Optional: Icon before prompt */
+.prompt-tip::before,
+.prompt-info::before,
+.prompt-warning::before,
+.prompt-danger::before {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+}
+.prompt-tip,
+.prompt-info,
+.prompt-warning,
+.prompt-danger {
+  border-left: .75px solid;
+  padding: .5rem;
+  padding-left: 2.5rem;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+  }
+
+.prompt-tip::before {
+  content: "💡";
+  display: inline;
+}
+
+.prompt-info::before {
+  content: "ℹ️";
+  display: inline-block;
+}
+
+.prompt-warning::before {
+  content: "⚠️";
+}
+
+.prompt-danger::before {
+  content: "❗";
+}
 
 pre {
   padding: 1rem 2rem;
@@ -930,7 +993,7 @@ table tfoot td {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 240px;
+  width: 270px;
   height: 100%;
   padding: 20px 10px;
   background-color: #ffffff;

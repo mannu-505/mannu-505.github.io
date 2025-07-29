@@ -9,7 +9,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Monk Who Code # add your name
+author: Manmohan Singh# add your name
 author-img: david-freeman.jpg # add your photo
 about-author: Some one searching for meaning of life as well as the sides of Tech. Always hungry to keep learning. # add description
 social-twitter: # add your Twitter handle
@@ -26,6 +26,7 @@ analytics: # Google Analytics
 
 # Build Settings
 markdown: kramdown
+
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
