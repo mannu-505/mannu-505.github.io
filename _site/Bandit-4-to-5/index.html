@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Bandit 3 -> 4 - Monk who code</title>
+	<title>Bandit 4 -> 5 - Monk who code</title>
 
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Monk who code" property="og:site_name">
   
-    <meta content="Bandit 3 -> 4" property="og:title">
+    <meta content="Bandit 4 -> 5" property="og:title">
   
   
     <meta content="article" property="og:type">
@@ -18,10 +18,10 @@
 " property="og:description">
   
   
-    <meta content="http://localhost:4000/Bandit-2-to-3/" property="og:url">
+    <meta content="http://localhost:4000/Bandit-4-to-5/" property="og:url">
   
   
-    <meta content="2025-05-08T07:18:00+05:30" property="article:published_time">
+    <meta content="2025-05-10T07:18:00+05:30" property="article:published_time">
     <meta content="http://localhost:4000/about/" property="article:author">
   
   
@@ -46,10 +46,10 @@
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@">
   
-    <meta name="twitter:title" content="Bandit 3 -> 4">
+    <meta name="twitter:title" content="Bandit 4 -> 5">
   
   
-    <meta name="twitter:url" content="http://localhost:4000/Bandit-2-to-3/">
+    <meta name="twitter:url" content="http://localhost:4000/Bandit-4-to-5/">
   
   
     <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
@@ -127,15 +127,15 @@
     
     <div class="page-cover-image">
       <figure>
-        <img class="page-image" src=/assets/img/workflow.jpg alt="Bandit 3 -> 4">
+        <img class="page-image" src=/assets/img/workflow.jpg alt="Bandit 4 -> 5">
         
       </figure>
     </div> <!-- End Page Cover Image -->
     
     <div class="wrap-content">
       <header class="header-page">
-        <h1 class="page-title">Bandit 3 -> 4</h1>
-        <div class="page-date"><span>2025, May 08&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+        <h1 class="page-title">Bandit 4 -> 5</h1>
+        <div class="page-date"><span>2025, May 10&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
       <h2 id="what-is-overthewire">What is overthewire?</h2>
 <p>It is a website that provides challenges that help learning Linux commands and cybersecurity concepts.</p>
@@ -148,36 +148,38 @@
 <hr />
 
 <h2 id="level-goal">level goal:</h2>
-<p>The password for the next level is stored in a hidden file in the inhere directory.</p>
+<p>The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.</p>
 <h3 id="commands-you-may-need">Commands you may need:</h3>
 <p>ls,cd,cat,file,du,find</p>
 
 <hr />
 
 <h2 id="solution">Solution:</h2>
-<p>Login to bandit3 using ssh by password <code class="language-plaintext highlighter-rouge">MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx</code> at port 2220.</p>
+<p>Login to bandit4 using ssh by password <code class="language-plaintext highlighter-rouge">2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ</code> at port 2220.</p>
 <div class="language-ssh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ssh</span> bandit3@bandit.labs.overthewire.org -p <span class="m">2220</span>
 </code></pre></div></div>
-<p>It will take you to home directory of bandit3.</p>
+<p>It will take you to home directory of bandit4.</p>
 
 <p>List the content of directory.</p>
-<div class="language-ssh nolineno highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">bandit3</span>@bandit:~<span class="err">$</span> ls
+<div class="language-ssh nolineno highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">bandit4</span>@bandit:~<span class="err">$</span> ls
 <span class="k">inhere</span>
 </code></pre></div></div>
 
-<p>It is a directory named inhere. move into the directory for further content and check the content of the directory.</p>
+<p>It is a directory named inhere. move into the directory for further inspection and check the content of the directory.</p>
 
 <div class="language-ssh nolineno highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">bandit3</span>@bandit:~<span class="err">$</span> cd inhere
 <span class="k">bandit3</span>@bandit:~/inhere<span class="err">$</span> ls
-<span class="k">bandit3</span>@bandit:~/inhere<span class="err">$</span> ll
-<span class="k">total</span> <span class="m">12</span>
-<span class="k">drwxr</span>-xr-x <span class="m">2</span> root    root    <span class="m">4096</span> Aug <span class="m">15</span> <span class="m">13</span>:16 ./
-<span class="k">drwxr</span>-xr-x <span class="m">3</span> root    root    <span class="m">4096</span> Aug <span class="m">15</span> <span class="m">13</span>:16 ../
-<span class="err">-</span><span class="k">rw</span>-r----- <span class="m">1</span> bandit4 bandit3   <span class="m">33</span> Aug <span class="m">15</span> <span class="m">13</span>:16 ...Hiding-From-You
+<span class="err">-</span><span class="k">file00</span>  -file02  -file04  -file06  -file08
+<span class="err">-</span><span class="k">file01</span>  -file03  -file05  -file07  -file09
 </code></pre></div></div>
 
-<p>There is a file named …Hiding-from-You. check the content of file.<br />
-The password for level four is <code class="language-plaintext highlighter-rouge">2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ</code></p>
+<p>There are multiple files, names starting with -file. if you try to open the file directly it wont open because shell takes ‘-‘ symbol as as argument or option. So you have to read it using the full path. Try to read all files.</p>
+
+<div class="language-ssh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">bandit4</span>@bandit:~/inhere<span class="err">$</span> cat ./-file07
+<span class="k">4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw</span>
+</code></pre></div></div>
+
+<p>The password for level five is <code class="language-plaintext highlighter-rouge">4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw</code></p>
 
 <blockquote class="prompt-tip">
   <p>Create you own file to store the passwords of previous levels along with little description how did you find them so that in case the passwords are changed you need not to start from zero.</p>
@@ -185,9 +187,9 @@ The password for level four is <code class="language-plaintext highlighter-rouge
 
       <div class="page-footer">
         <div class="page-share">
-          <a href="https://twitter.com/intent/tweet?text=Bandit 3 -> 4&url=http://localhost:4000/Bandit-2-to-3/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
-          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/Bandit-2-to-3/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
-          <a href="https://plus.google.com/share?url=http://localhost:4000/Bandit-2-to-3/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+          <a href="https://twitter.com/intent/tweet?text=Bandit 4 -> 5&url=http://localhost:4000/Bandit-4-to-5/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/Bandit-4-to-5/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/Bandit-4-to-5/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
         </div>
         <div class="page-tag">
           

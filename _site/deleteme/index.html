@@ -2,34 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to Jekyll! - Monk who code</title>
+	<title>DeleteMe - Monk who code</title>
 
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Monk who code" property="og:site_name">
   
-    <meta content="Welcome to Jekyll!" property="og:title">
+    <meta content="DeleteMe" property="og:title">
   
   
     <meta content="article" property="og:type">
   
   
-    <meta content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes." property="og:description">
+    <meta content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" property="og:description">
   
   
-    <meta content="http://localhost:4000/welcome-to-jekyll/" property="og:url">
+    <meta content="http://localhost:4000/deleteme/" property="og:url">
   
   
-    <meta content="2017-04-06T16:02:20+05:30" property="article:published_time">
+    <meta content="2026-02-22T07:18:00+05:30" property="article:published_time">
     <meta content="http://localhost:4000/about/" property="article:author">
   
   
-    <meta content="http://localhost:4000/assets/img/david-freeman.jpg" property="og:image">
+    <meta content="http://localhost:4000/assets/img/thundercipher.jpeg" property="og:image">
   
   
     
+    <meta content="thundercipher," property="article:section">
+    
   
   
+    
+    <meta content="IDOR" property="article:tag">
+    
+    <meta content="OWASP" property="article:tag">
     
   
 
@@ -37,19 +44,20 @@
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@">
   
-    <meta name="twitter:title" content="Welcome to Jekyll!">
+    <meta name="twitter:title" content="DeleteMe">
   
   
-    <meta name="twitter:url" content="http://localhost:4000/welcome-to-jekyll/">
+    <meta name="twitter:url" content="http://localhost:4000/deleteme/">
   
   
-    <meta name="twitter:description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
+    <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
   
   
-    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/david-freeman.jpg">
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/thundercipher.jpeg">
   
 
-	<meta name="description" content="You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes.">
+	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
@@ -115,34 +123,70 @@
   <article class="article-page">
   <div class="page-content">
     
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/thundercipher.jpeg alt="DeleteMe">
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
     
     <div class="wrap-content">
       <header class="header-page">
-        <h1 class="page-title">Welcome to Jekyll!</h1>
-        <div class="page-date"><span>2017, Apr 06&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+        <h1 class="page-title">DeleteMe</h1>
+        <div class="page-date"><span>2026, Feb 22&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
-      <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+      <h2 id="what-is-thundercipher">What is Thundercipher?</h2>
+<p>It is a website that provides challenges that help learning and practicing ethical hacking and cybersecurity concepts.</p>
 
-<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2 id="prerequisite">Prerequisite</h2>
+<p>you need to know what are major OWASP and web vulnerabilities.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<hr />
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h3 id="toolscommands-you-may-need">Tools/Commands you may need:</h3>
+<p>Burp Suite, curl</p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<hr />
+
+<h2 id="solution">Solution:</h2>
+<p>Start the machine and open the web at port 5000.<br />
+There is simple website for tracking fitness goals. you can register, login and manage your profile.</p>
+
+<p><img src="/assets/img/deleteme/deleteme1.png" alt="deletemedashboar" /></p>
+
+<p>I tried to check the source code and cookies too but there is nothing usefull.<br />
+I registered a new account, opened.<br />
+I opened burpsuite and tried intercepting the requests while trying to delete my account.</p>
+
+<p><img src="/assets/img/deleteme/deleteme2.png" alt="accountdelete" /></p>
+
+<p>There it was while i tried to delete account the request passes id of the account along with it.</p>
+
+<p><img src="/assets/img/deleteme/deleteme3.png" alt="burpsuite screenshot" /></p>
+
+<p>you can change the account id to 1 which probably belong to admin.<br />
+Change the id and forward the request.
+There you will get your flag as an alert box.</p>
+
+<p><img src="/assets/img/deleteme/deleteme4.png" alt="flag" /></p>
+
+<p>There is your flag.</p>
+<blockquote class="prompt-tip">
+  <p>ThunderCipher{id0r_4cc0unt_t4k30v3r_2k26.</p>
+</blockquote>
 
 
       <div class="page-footer">
         <div class="page-share">
-          <a href="https://twitter.com/intent/tweet?text=Welcome to Jekyll!&url=http://localhost:4000/welcome-to-jekyll/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
-          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/welcome-to-jekyll/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
-          <a href="https://plus.google.com/share?url=http://localhost:4000/welcome-to-jekyll/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+          <a href="https://twitter.com/intent/tweet?text=DeleteMe&url=http://localhost:4000/deleteme/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/deleteme/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/deleteme/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
         </div>
         <div class="page-tag">
+          
+            <a href="/tags#IDOR" class="tag">&#35; IDOR</a>
+          
+            <a href="/tags#OWASP" class="tag">&#35; OWASP</a>
           
         </div>
       </div>
